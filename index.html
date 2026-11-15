@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="pagina">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="global/global.css">
+
+    <title>MacroWeb</title>
+</head>
+<body>
+    <header class="topo">
+        <div class="logo">
+            <img src="img/logo.png" alt="MacroWeb">
+        </div>
+
+        <div id="menu-container">
+            <button id="btn-hamburguer" class="hamburguer" aria-label="Abrir menu">☰</button>
+
+            <nav class="menu" id="menu">
+                <a href="#inicio" class="item-menu">Início</a>
+                <a href="polimeros/polimeros.html" class="item-menu">Polímeros</a>
+                <a href="lipidios/lipidios.html" class="item-menu">Lipídios</a>
+                <a href="carboidratos/carboidratos.html" class="item-menu">Carboidratos</a>
+                <a href="proteinas/proteinas.html" class="item-menu">Proteínas</a>
+                <a href="acidos-nucleicos/acidos-nucleicos.html" class="item-menu">Ácidos Nucleicos</a>
+                <a href="quiz/quiz.html" class="btn-quiz">Quiz Interativo</a>
+            </nav>
+
+            <div id="config">
+                <button id="btn-config" aria-label="Configurações">⚙</button>
+                <div id="painel-config" class="painel-config">
+                    <button id="escuro">Tema escuro</button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="banner-inicio" id="inicio">
+        <div class="area-texto">
+            <p class="nome-site">MACROWEB</p>
+            <h1>Bem-vindo à MacroWeb</h1>
+            <p class="descricao-site">
+                O MacroWeb busca aproximar o usuário da química de maneira dinâmica e intuitiva, visando oferecer a melhor experência possível. Dessa forma buscamos fazer do aprendizado um momento leve e descontraído, incluindo esse site como uma ferramenta para auxiliar e acompanhar os interessados no assunto, entre outros. 
+            </p>
+        </div>
+        <div class="area-icones">
+            <img src="img/carboidratos.png" alt="">
+        </div>
+    </section>
+
+    <section class="conteudo">
+        <h2 class="titulo-secao">Temas Científicos</h2>
+        <p class="subtitulo-secao">Escolha uma macromolécula</p>
+        <div id="categorias">
+            <nav id="opcoes">
+                <div class="barra-pesquisa">
+                    <input id="pesquisa" type="text" placeholder="Pesquisar..." >
+                </div>
+                <a class="btn-filtro ativo" id="todos">Todos</a>
+                <a class="btn-filtro" id="fontes-energia">Fontes de energia</a>
+                <a class="btn-filtro" id="estrutura-defesa">Estrutura e defesa</a>
+                <a class="btn-filtro" id="informacao-genetica">Informação genética</a>
+                <a class="btn-filtro" id="sinteticos-industriais">Sintéticos/Indústriais</a>
+            </nav>
+        </div>
+        <div class="area-cards">
+            <div class="btn-setas" id="btn-esquerda">◀</div>
+            <div class="cards-container" id="cards-container">
+                <div class="card sinteticos-industriais" id="polimeros-card">
+                    <img src="img/polimeros.png" alt="">
+                    <h2>Polímeros</h2>
+                    <p>
+                        São macromoléculas que são formadas a partir de moléculas menores repetidas, conhecidas como monômeros.
+                    </p>
+                    <a class="btn-saiba-mais" id="saiba-polimeros">Saiba mais</a>
+                </div>
+                <div class="card fontes-energia" id="lipidios-card">
+                    <img src="img/lipidios.png" alt="">
+                    <h2>Lipídios</h2>
+                    <p>
+                        Os lipídios são um grupo de compostos orgânicos essenciais conhecidos pela sua natureza hidrofóbica.
+                    </p>
+                    <a class="btn-saiba-mais" id="saiba-lipidios">Saiba mais</a>
+                </div>
+                <div class="card fontes-energia" id="carboidratos-card">
+                    <img src="img/carboidratos.png" alt="">
+                    <h2>Carboidratos</h2>
+                    <p>
+                        São as principais fontes de energia de uma célula.
+                    </p>
+                    <a class="btn-saiba-mais" id="saiba-carboidratos">Saiba mais</a>
+                </div>
+                <div class="card estrutura-defesa" id="proteinas-card">
+                    <img src="img/aminoacidos-proteinas.png" alt="">
+                    <h2>Aminoácidos e Proteínas</h2>
+                    <p>
+                        Aminoácidos são as unidades formadoras das proteínas.
+                    </p>
+                    <a class="btn-saiba-mais" id="saiba-proteinas">Saiba mais</a>
+                </div>
+                <div class="card informacao-genetica" id="acidos-nucleicos-card">
+                    <img src="img/acidosnucleicos.png" alt="">
+                    <h2>Ácidos Nucleicos</h2>
+                    <p>
+                        Os ácidos nucleicos são macromoléculas constituídas por nucleotídeos, que formam o DNA e o RNA.
+                    </p>
+                    <a class="btn-saiba-mais" id="saiba-acidos-nucleicos">Saiba mais</a>
+                </div>
+            </div>
+            
+            <div class="btn-setas" id="btn-direita">▶</div>
+        </div>
+
+        <p id="sem-resultado" class="escondido">Nenhum resultado encontrado.</p>
+
+        <a class="btn-quiz" href="quiz/quiz.html">Explorar o quiz →</a>
+    </section>
+
+    <footer class="rodape">
+        Projeto de química desenvolvimento de aplicações web — MacroWeb. <br>
+        Desenvolvido por Lara Honey Pinheiro Ferreira,
+        Jamile Anizio Lima e Ryanna Pereira da Silva — 3° Informática Matutino &copy; 2026.
+    </footer>
+
+    <div class="modal saiba-polimeros">
+        <a class="modal-fundo"></a>
+        <div class="modal-caixa">
+            <a class="modal-fechar" aria-label="Fechar">✕</a>
+            <img src="img/polimeros.png" alt="">
+            <h2>Polímeros</h2>
+            <p>Polímeros são macromoléculas formadas pela repetição de unidades menores, os monômeros, ligadas por ligações covalentes.</p>
+            <p>Podem ser naturais, como a celulose, o amido e o DNA, ou sintéticos, como o polietileno, o PVC e o náilon.</p>
+            <a class="btn-acao" id="polimeros" href="polimeros/polimeros.html">Ir para a página →</a>
+        </div>
+    </div>
+
+    <div class="modal saiba-lipidios">
+        <a class="modal-fundo"></a>
+        <div class="modal-caixa">
+            <a class="modal-fechar" aria-label="Fechar">✕</a>
+            <img src="img/lipidios.png" alt="">
+            <h2>Lipídios</h2>
+            <p>Lipídios são biomoléculas pouco solúveis em água, como gorduras, óleos, ceras, fosfolipídios e esteroides.</p>
+            <p>Armazenam energia, formam as membranas das células, isolam termicamente o corpo e originam hormônios.</p>
+            <a class="btn-acao" id="lipidios" href="lipidios/lipidios.html">Ir para a página →</a>
+        </div>
+    </div>
+
+    <div class="modal saiba-carboidratos">
+        <a class="modal-fundo"></a>
+        <div class="modal-caixa">
+            <a class="modal-fechar" aria-label="Fechar">✕</a>
+            <img src="img/carboidratos.png" alt="">
+            <h2>Carboidratos</h2>
+            <p>Carboidratos são açúcares e seus polímeros: monossacarídeos (glicose), dissacarídeos (sacarose) e polissacarídeos (amido, glicogênio, celulose).</p>
+            <p>São a principal fonte de energia dos seres vivos e dão estrutura às paredes celulares das plantas.</p>
+            <a class="btn-acao" href="carboidratos/carboidratos.html">Ir para a página →</a>
+        </div>
+    </div>
+
+    <div class="modal saiba-proteinas">
+        <a class="modal-fundo"></a>
+        <div class="modal-caixa">
+            <a class="modal-fechar" aria-label="Fechar">✕</a>
+            <img src="img/aminoacidos-proteinas.png" alt="">
+            <h2>Aminoácidos e Proteínas</h2>
+            <p>Proteínas são cadeias de aminoácidos unidos por ligações peptídicas. Os 20 aminoácidos se combinam em sequências diferentes.</p>
+            <p>A forma tridimensional define a função: enzimas, transporte, defesa, contração muscular e estrutura.</p>
+            <a class="btn-acao" id="proteinas" href="proteinas/proteinas.html" >Ir para a página →</a>
+        </div>
+    </div>
+
+    <div class="modal saiba-acidos-nucleicos">
+        <a class="modal-fundo"></a>
+        <div class="modal-caixa">
+            <a class="modal-fechar" aria-label="Fechar">✕</a>
+            <img src="img/aminoacidos-proteinas.png" alt="">
+            <h2>Ácidos Nucleicos</h2>
+            <p>DNA e RNA são polímeros de nucleotídeos, cada um com um açúcar, um grupo fosfato e uma base nitrogenada.</p>
+            <p>Guardam e transmitem a informação genética e orientam a produção de proteínas.</p>
+            <a class="btn-acao" id="acidos-nucleicos" href="acidos-nucleicos/acidos-nucleicos.html">Ir para a página →</a>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="global/global.js"></script>
+</body>
+</html>

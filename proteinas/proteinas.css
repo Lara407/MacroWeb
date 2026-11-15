@@ -1,0 +1,203 @@
+
+
+.card p{
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.intro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vw;
+    align-items: center;
+}
+
+.grupos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.grupos .card{padding: 22px 20px;}
+
+.grupos h3{font-size: 18px;}
+
+.fluxo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 3vh;
+}
+
+.fluxo .card{flex: 1;}
+
+.seta{
+    font-size: 32px;
+    color: var(--cor-texto-secundaria);
+}
+
+.peptidica{
+    background-color: var(--cor-hover-menu);
+    padding: 70px 5vw 80px 5vw;
+}
+
+.peptidica h2{
+    font-size: 34px;
+    margin: 0 0 2vh 0;
+}
+
+.peptidica-conteudo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vw;
+    align-items: center;
+    margin-top: 3vh;
+}
+
+.peptidica img{
+    width: 100%;
+    border-radius: 24px;
+}
+
+
+
+.funcoes img{
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.cotidiano{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2vw;
+    margin-top: 3vh;
+}
+
+.cotidiano img{
+    width: 100%;
+    height: 100%;
+    min-height: 240px;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+.cotidiano .card{padding: 40px 36px;}
+
+.cotidiano h3{font-size: 28px;}
+
+.cotidiano p{font-size: 17px;}
+
+.sabia{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border: 3px dashed var(--cor-texto-secundaria);
+    border-radius: 24px;
+    padding: 35px 40px;
+}
+
+.sabia-icone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: var(--cor-primaria);
+    color: var(--cor-claro);
+    font-size: 44px;
+    font-weight: 600;
+    box-shadow: 0 10px 25px var(--cor-primaria-transparnte-02);
+}
+
+.sabia h3{
+    font-size: 28px;
+    margin: 0 0 10px 0;
+}
+
+.sabia p{
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--cor-texto-secundaria);
+    max-width: 70ch;
+}
+
+#fonte{
+    font-size: 13px;
+}
+
+@media (max-width: 900px){
+    .informacoes h2,
+    .peptidica h2{font-size: 28px;}
+
+    .intro,
+    .peptidica-conteudo,
+    .funcoes,
+    .cotidiano{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .fluxo{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .seta{
+        align-self: center;
+        transform: rotate(90deg);
+    }
+
+    .card{padding: 20px;}
+
+    .cotidiano .card{padding: 25px;}
+}
+
+@media (max-width: 600px){
+    .menu{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner{
+        flex-direction: column;
+        text-align: center;
+        min-height: 250px;
+        padding: 110px 5vw 5vh 5vw;
+    }
+
+    .banner-texto{max-width: 100%;}
+    .banner h1{font-size: 40px;}
+    .banner p{font-size: 16px;}
+
+    .banner-imagem{
+        max-width: 80%;
+        max-height: 220px;
+    }
+
+    .voltar{
+        font-size: 14px;
+        padding: 10px 22px;
+    }
+
+    .grupos{grid-template-columns: 1fr;}
+
+    .cotidiano img{
+        height: 200px;
+        min-height: 0;
+    }
+
+    .sabia{
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+    }
+}

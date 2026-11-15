@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR" id="pagina"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/global/global.css">
+    <link rel="stylesheet" href="polimeros.css">
+    <title>MacroWeb - Polímeros</title>
+</head>
+<body>
+    <header class="topo">
+        <div class="logo">
+            <img src="/img/logo.png" alt="MacroWeb">
+        </div>
+
+        <div id="menu-container">
+            <button id="btn-hamburguer" class="hamburguer" aria-label="Abrir menu">☰</button>
+
+            <nav class="menu" id="menu">
+                <a href="/index.html" class="item-menu">Início</a>
+                <a href="#polimeros" class="item-menu">Polímeros</a>
+                <a href="/lipidios/lipidios.html" class="item-menu">Lipídios</a>
+                <a href="/carboidratos/carboidratos.html" class="item-menu">Carboidratos</a>
+                <a href="/proteinas/proteinas.html" class="item-menu">Proteínas</a>
+                <a href="/acidos-nucleicos/acidos-nucleicos.html" class="item-menu">Ácidos Nucleicos</a>
+                <a href="/quiz/quiz.html" class="btn-quiz">Quiz Interativo</a>
+            </nav>
+            <div id="config">
+                <button id="btn-config" aria-label="Configurações">⚙</button>
+                <div id="painel-config" class="painel-config">
+                    <button id="escuro">Tema escuro</button>
+                </div>
+            </div>            
+        </div>
+    </header>
+
+    <section class="banner" id="inicio">
+        <img src="/global/img/topo.png" class="banner-fundo" alt="">
+
+        <div class="banner-texto">
+            <a href="/index.html" class="voltar">← Voltar para página inicial</a>
+            <h1>Polímeros</h1>
+            <p>Os polímeros são macromoléculas constituídas por unidades
+            menores, os monômeros. Os monômeros ligam-se entre si através
+            de ligações covalentes. O termo polímero deriva do grego, poli
+            "muitas" e meros "partes".</p>
+        </div>
+
+        <img src="img/polimeros.png" class="banner-imagem" alt="">
+    </section>
+
+    <main class="informacoes">
+        <div class="caixa faixa">
+            <h2>Diferença entre Polímeros naturais e sintéticos</h2>
+            <p>Os polímeros sintéticos são fabricados pelo ser humano
+            (produzidos em laboratório) e os polímeros naturais são
+            encontrados na natureza (produzidos por células).</p>
+        </div>
+
+        <section class="secao">
+            <h2>Tipos de polímeros</h2>
+
+            <div class="tipos">
+                <div class="card tipo">
+                    <span class="numero">1</span>
+                    <div>
+                        <h3>Polímeros de Adição</h3>
+                        <p>São os polímeros obtidos pela adição sucessiva de monômeros.
+                        Como exemplos temos os polissacarídeos, formados por monômeros de
+                        monossacarídeos e as proteínas, formadas por monômeros de aminoácidos.</p>
+                    </div>
+                </div>
+
+                <div class="card tipo">
+                    <span class="numero">2</span>
+                    <div>
+                        <h3>Polímeros de Condensação</h3>
+                        <p>São os polímeros obtidos pela adição de dois monômeros diferentes
+                        com eliminação de uma molécula de água, álcool ou ácido, durante a polimerização.</p>
+                    </div>
+                </div>
+
+                <div class="card tipo">
+                    <span class="numero">3</span>
+                    <div>
+                        <h3>Polímeros de Rearranjo</h3>
+                        <p>São os polímeros resultantes da reação entre monômeros que sofrem rearranjo nas
+                        suas estruturas químicas, durante a reação de polimerização.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao">
+            <h2>Exemplos e suas utilizações</h2>
+
+            <div class="exemplos-lista">
+                <div class="card exemplo">
+                    <img src="img/garrafas.jpg" alt="Garrafa de polietileno">
+                    <h3>Polietileno (PE)</h3>
+                    <p><strong>Utilização:</strong> embalagens plásticas,
+                    sacolas, garrafas e utensílios domésticos.</p>
+                    <p>É leve, resistente e barato, por isso
+                    é amplamente usado no dia a dia.</p>
+                </div>
+
+                <div class="card exemplo">
+                    <img src="img/pneu.jpg" alt="Pneu de nylon">
+                    <h3>Nylon</h3>
+                    <p><strong>Utilização:</strong> roupas, cordas, pneus
+                    e peças industriais.</p>
+                    <p>É forte, flexível e resistente ao desgaste,
+                    sendo muito usado na indústria têxtil
+                    e automotiva.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao">
+            <h2>Impacto ambiental</h2>
+
+            <div class="card impacto-conteudo">
+                <p>Por conta da modernização das embalagens para produtos industrializados, começou a apresentar
+                riscos ao meio ambiente. Mas, o grande problema está no descarte das embalagens
+                plásticas, que muitas vezes é feito em locais inapropriados, com isso, a poluição 
+                causada pelos polímeros se tornou uma preocupação em nosso país e em todo o mundo. 
+                Ela pode ocasionar a poluição de rios e lagos e consequentes enchentes, e também do 
+                solo de um modo geral.</p>
+
+                <img src="img/tartaruga.jpg" alt="Tartaruga marinha ao lado de uma sacola plástica no oceano">
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        Projeto de química desenvolvimento de aplicações web — MacroWeb. <br>
+        Desenvolvido por Lara Honey Pinheiro Ferreira,
+        Jamile Anizio Lima e Ryanna Pereira da Silva — 3° Informática Matutino &copy; 2026.
+    </footer>
+
+    <script type="text/javascript" src="/global/global.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR" id="pagina">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/global/global.css">
+    <link rel="stylesheet" href="quiz.css">
+    <title>MacroWeb - Quiz Interativo</title>
+</head>
+<body>
+    <header class="topo">
+        <div class="logo">
+            <img src="/img/logo.png" alt="MacroWeb">
+        </div>
+
+        <div id="menu-container">
+            <button id="btn-hamburguer" class="hamburguer" aria-label="Abrir menu">☰</button>
+
+            <nav class="menu" id="menu">
+                <a href="/index.html" class="item-menu">Início</a>
+                <a href="/polimeros/polimeros.html" class="item-menu">Polímeros</a>
+                <a href="/lipidios/lipidios.html" class="item-menu">Lipídios</a>
+                <a href="/carboidratos/carboidratos.html" class="item-menu">Carboidratos</a>
+                <a href="/proteinas/proteinas.html" class="item-menu">Proteínas</a>
+                <a href="/acidos-nucleicos/acidos-nucleicos.html" class="item-menu">Ácidos Nucleicos</a>
+                <a href="#quiz" class="btn-quiz">Quiz Interativo</a>
+            </nav>
+            <div id="config">
+                <button id="btn-config" aria-label="Configurações">⚙</button>
+                <div id="painel-config" class="painel-config">
+                    <button id="escuro">Tema escuro</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="tela-inicio">
+        <section class="banner" id="inicio">
+            <img src="/global/img/topo.png" class="banner-fundo" alt="">
+
+            <div class="banner-texto">
+                <h1>Quiz Interativo</h1>
+                <p>Teste o que você aprendeu sobre carboidratos, lipídios, proteínas e ácidos nucleicos e descubra quantas questões você acerta.</p>
+
+                <div class="botoes">
+                    <button class="btn-comecar" id="btn-iniciar">Começar o quiz</button>
+                    <a href="/index.html" class="voltar">← Voltar para página inicial</a>
+                </div>
+            </div>
+
+            <img src="img/quiz.jpg" class="banner-imagem" alt="">
+        </section>
+
+        <main class="informacoes">
+            <h2>Como funciona?</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>1. Leia a pergunta</h3>
+                    <p>Cada pergunta é sobre um dos temas estudados no site.</p>
+                </div>
+
+                <div class="card">
+                    <h3>2. Escolha uma alternativa</h3>
+                    <p>São 5 alternativas por pergunta e apenas uma delas está correta.</p>
+                </div>
+
+                <div class="card card-claro">
+                    <h3>3. Veja sua pontuação</h3>
+                    <p>No final do quiz, você descobre quantas perguntas acertou.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <section class="tela-quiz escondido" id="tela-quiz">
+        <div class="quiz-caixa">
+
+            <div class="quiz-topo">
+                <span>Pergunta <span id="numero-pergunta">1</span> de <span id="total-perguntas">10</span></span>
+            </div>
+
+            <div class="progresso">
+                <div class="progresso-preenchimento" id="barra-progresso"></div>
+            </div>
+
+            <div class="pergunta">
+                <span class="tag tag-escuro" id="categoria-pergunta">Categoria</span>
+                <h2 id="texto-pergunta">Texto da pergunta</h2>
+            </div>
+
+            <div class="lista-opcoes" id="lista-opcoes">
+                <button class="opcao">
+                    <span class="letra">A</span>
+                    <span class="texto-opcao">Alternativa A</span>
+                </button>
+                <button class="opcao">
+                    <span class="letra">B</span>
+                    <span class="texto-opcao">Alternativa B</span>
+                </button>
+                <button class="opcao">
+                    <span class="letra">C</span>
+                    <span class="texto-opcao">Alternativa C</span>
+                </button>
+                <button class="opcao">
+                    <span class="letra">D</span>
+                    <span class="texto-opcao">Alternativa D</span>
+                </button>
+                <button class="opcao">
+                    <span class="letra">E</span>
+                    <span class="texto-opcao">Alternativa E</span>
+                </button>
+            </div>
+
+            <div class="quiz-rodape">
+                <button class="btn-comecar escondido" id="btn-proxima">Próxima pergunta</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="tela-resultado escondido" id="tela-resultado">
+        <div class="quiz-caixa">
+
+            <div class="resultado-card">
+                <h2>Fim do quiz!</h2>
+                <p class="nota"><span id="pontuacao">0</span> / <span id="total-final">10</span></p>
+                <p id="mensagem-resultado">Mensagem de acordo com a pontuação.</p>
+            </div>
+
+            <div class="acertos-erros">
+                <div class="card card-claro">
+                    <h3>Acertos</h3>
+                    <p class="numero" id="acertos">0</p>
+                </div>
+                <div class="card">
+                    <h3>Erros</h3>
+                    <p class="numero" id="erros">0</p>
+                </div>
+            </div>
+
+            <div class="botoes botoes-centro">
+                <button class="btn-comecar" id="btn-refazer">Refazer o quiz</button>
+                <a href="/index.html" class="voltar">← Voltar para página inicial</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="rodape">
+        Projeto de química desenvolvimento de aplicações web — MacroWeb. <br>
+        Desenvolvido por Lara Honey Pinheiro Ferreira,
+        Jamile Anizio Lima e Ryanna Pereira da Silva — 3° Informática Matutino &copy; 2026.
+    </footer>
+
+    <script type="text/javascript" src="quiz.js"></script>
+    <script type="text/javascript" src="/global/global.js"></script>
+</body>
+</html>
